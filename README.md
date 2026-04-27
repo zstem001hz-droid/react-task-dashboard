@@ -25,17 +25,21 @@ A full-featured task management dashboard built with React and TypeScript. Demon
 
 ## Project Structure
 
+## Project Structure
+
+```
 src/
 ├── components/
-│ ├── Dashboard/ ← root dashboard component
-│ ├── TaskList/ ← list rendering and individual task display
-│ ├── TaskForm/ ← controlled form for adding tasks
-│ └── TaskFilter/ ← filtering and search controls
+│   ├── Dashboard/      ← root dashboard component
+│   ├── TaskList/       ← list rendering and individual task display
+│   ├── TaskForm/       ← controlled form for adding tasks
+│   └── TaskFilter/     ← filtering and search controls
 ├── types/
-│ └── index.ts ← all TypeScript interfaces
+│   └── index.ts        ← all TypeScript interfaces
 ├── utils/
-│ └── taskUtils.ts ← filtering, sorting, and localStorage utilities
-└── App.tsx ← root component
+│   └── taskUtils.ts    ← filtering, sorting, and localStorage utilities
+└── App.tsx             ← root component
+```
 
 ## Getting Started
 
