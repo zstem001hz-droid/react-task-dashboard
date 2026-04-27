@@ -25,8 +25,6 @@ A full-featured task management dashboard built with React and TypeScript. Demon
 
 ## Project Structure
 
-## Project Structure
-
 ```
 src/
 ├── components/
