@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# React Task Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Author:** Zac White
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A full-featured task management dashboard built with React and TypeScript. Demonstrates component composition, state management, controlled forms,dynamic list rendering, filtering, sorting, localStorage persistence, and light/dark theme toggling.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ Add, update, and delete tasks
+- 🔍 Filter tasks by status and priority
+- 🔎 Search tasks by title
+- 📅 Sort tasks by due date
+- 📊 Real-time task statistics
+- 💾 Tasks persist via localStorage
+- 🌙 Light and dark mode toggle
+- 🎨 Color-coded priority and status indicators
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React 19](https://react.dev/) — UI library
+- [TypeScript](https://www.typescriptlang.org/) — Type safety
+- [Vite](https://vitejs.dev/) — Build tool and dev server
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+src/
+├── components/
+│ ├── Dashboard/ ← root dashboard component
+│ ├── TaskList/ ← list rendering and individual task display
+│ ├── TaskForm/ ← controlled form for adding tasks
+│ └── TaskFilter/ ← filtering and search controls
+├── types/
+│ └── index.ts ← all TypeScript interfaces
+├── utils/
+│ └── taskUtils.ts ← filtering, sorting, and localStorage utilities
+└── App.tsx ← root component
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Components
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+_To be documented as components are built._
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## References
+
+_To be added throughout development._
+
+## Reflections
+
+_To be completed after implementation._
