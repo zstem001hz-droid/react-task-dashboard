@@ -72,4 +72,37 @@ function App() {
     saveTasksToStorage(tasks);
   }, [tasks]);
 
+  const handleAddTask = (newTask: Task) => {
+    setTasks(prev => [...prev, newTask]);
+  };
+
+  const handleStatusChange = (taskId: string, newStatus: import('./types/index').TaskStatus) => {
+    setTasks(prev =>
+      prev.map(task =>
+        task.id === taskId ? { ...task, status: newStatus } : task
+      )
+    );
+  };
+
+  const handleDelete = (taskId: string) => {
+    setTasks(prev => prev.filter(task => task.id !== taskId));
+  };
+
+  const handleFilterChange = (newFilters: FilterState) => {
+    setFilters(newFilters);
+  };
+
+  const handleSortToggle = () => {
+    setSortDirection(prev => prev === 'asc' ? 'desc' : 'asc');
+  };
+
+  // Cycles through light → dark → system on each toggle
+  const handleThemeToggle = () => {
+    setTheme(prev => {
+      if (prev === 'light') return 'dark';
+      if (prev === 'dark') return 'system';
+      return 'light';
+    });
+  };
+
   

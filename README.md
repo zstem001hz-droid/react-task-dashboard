@@ -71,6 +71,8 @@ Handles status updates and deletion via parent callbacks.
 ## References
 
 ### React
+- [useEffect — React Docs](https://react.dev/reference/react/useEffect) — useEffect
+- [A Complete Guide to useEffect — Dan Abramov/Overreacted](https://overreacted.io/a-complete-guide-to-useeffect/) — A Complete Guide to useEffect
 - [Rendering Lists](https://react.dev/learn/rendering-lists) — Rendering Lists: `.map()` and the `key` prop
 - [Conditional Rendering](https://react.dev/learn/conditional-rendering) — Conditional Rendering: `&&` and ternary patterns
 - [useState Hook](https://react.dev/reference/react/useState) — useState
@@ -94,6 +96,7 @@ Handles status updates and deletion via parent callbacks.
 - [Array.prototype.sort() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) — Array.prototype.sort()
 - [Date.getTime() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) — Date.prototype.getTime()
 - [Date.prototype.toISOString() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString) — Date.prototype.toISOString()
+- [Nullish coalescing operator (??) — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing) — Nullish coalescing operator (??)
 
 ### localStorage
 - [Window: localStorage property — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) — Window: localStorage property
