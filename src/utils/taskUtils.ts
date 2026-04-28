@@ -52,3 +52,14 @@ export const saveTasksToStorage = (tasks: Task[]): void => {
     console.error('Failed to save tasks to localStorage:', error);
   }
 };
+
+// Loads tasks from localStorage
+export const loadTasksFromStorage = (): Task[] | null => {
+  try {
+    const stored = localStorage.getItem('react-task-dashboard');
+    return stored ? JSON.parse(stored) : null;
+  } catch (error) {
+    console.error('Failed to load tasks from localStorage:', error);
+    return null;
+  }
+};
