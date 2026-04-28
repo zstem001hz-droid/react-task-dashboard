@@ -23,8 +23,6 @@ export const filterTasks = (tasks: Task[], filters: FilterState): Task[] => {
 };
 
 // Sorts tasks by due date
-// 'asc' = earliest first, 'desc' = latest first
-// Spreads into new array first to avoid mutating original
 export const sortTasksByDate = (
   tasks: Task[],
   direction: 'asc' | 'desc' = 'asc'
@@ -34,4 +32,14 @@ export const sortTasksByDate = (
     const dateB = new Date(b.dueDate).getTime();
     return direction === 'asc' ? dateA - dateB : dateB - dateA;
   });
+};
+
+// Calculates task counts per status from the tasks array
+export const calculateStats = (tasks: Task[]): TaskStats => {
+  return {
+    total: tasks.length,
+    pending: tasks.filter(t => t.status === 'pending').length,
+    inProgress: tasks.filter(t => t.status === 'in-progress').length,
+    completed: tasks.filter(t => t.status === 'completed').length,
+  };
 };
