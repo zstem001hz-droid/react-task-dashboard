@@ -76,23 +76,32 @@ Handles status updates and deletion via parent callbacks.
 - [useState Hook](https://react.dev/reference/react/useState) — useState
 - [Sharing State Between Components](https://react.dev/learn/sharing-state-between-components) — lifting state and callbacks
 - [Reacting to Input with State](https://react.dev/learn/reacting-to-input-with-state) — controlled forms
+- [Derived State — React Blog](https://legacy.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html) — You Probably Don't Need Derived State
 
 ### TypeScript
 - [TypeScript Handbook — Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)
 - [TypeScript Handbook — Union Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)
 - [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/)
-- [Derived State — React Blog](https://legacy.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html) — You Probably Don't Need Derived State
+- [TypeScript Utility Types: Record](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type) — TypeScript Utility Types: Record
+- [TypeScript Handbook: Type Assertions](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions) — TypeScript Handbook: Type Assertions
 
 ### JavaScript
 - [String.prototype.includes() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes) — String.prototype.includes()
+- [String.prototype.toLowerCase() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase) — String.prototype.toLowerCase()
 - [Array.prototype.sort() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) — Array.prototype.sort()
-- [Fireship — JavaScript Array Methods](https://www.youtube.com/watch?v=R8rmfD9Y5-c) — 8 Must Know JavaScript Array Methods
 - [Date.getTime() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) — Date.prototype.getTime()
 
-- ### localStorage
+### localStorage
 - [Window: localStorage property — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) — Window: localStorage property
 - [JSON.stringify() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) — JSON.stringify()
 - [Learn localStorage In 10 Minutes — Web Dev Simplified](https://www.youtube.com/watch?v=AUOzvFzdIk4) — Learn localStorage In 10 Minutes
+- [JSON.parse() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) — JSON.parse()
+
+### CSS
+- [CSS: transition property — MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) — CSS: transition property
+
+### Video Resources
+- [8 Must Know JavaScript Array Methods — Fireship](https://www.youtube.com/watch?v=R8rmfD9Y5-c) — 8 Must Know JavaScript Array Methods
 
 ### Tools
 - [Vite Documentation](https://vitejs.dev/guide/)
