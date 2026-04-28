@@ -9,3 +9,13 @@ export const TaskFilter: React.FC<TaskFilterProps> = ({ onFilterChange }) => {
     priority: undefined,
     searchTerm: '',
   });
+
+  // Updates independent filter field and notifies parent with full filter state
+  const handleFilterChange = (key: keyof FilterState, value: string) => {
+    const updated = {
+      ...filters,
+      [key]: value === 'all' || value === '' ? undefined : value,
+    };
+    setFilters(updated);
+    onFilterChange(updated);
+  };
