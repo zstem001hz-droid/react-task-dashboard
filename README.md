@@ -48,7 +48,25 @@ npm run dev
 
 ## Components
 
-_To be documented as components are built._
+### Dashboard
+Root dashboard component. Composes all child components into a cohesive
+layout. Manages theme state and passes it down to child components.
+
+### TaskForm
+Controlled form for creating new tasks. Toggles open and closed.
+Validates required fields before submission.
+
+### TaskFilter
+Search input and filter dropdowns for status and priority.
+Reports filter changes up to the parent via callback.
+
+### TaskList
+Renders the task list dynamically using `.map()` with stable keys.
+Handles empty state when no tasks match active filters.
+
+### TaskItem
+Individual task card with color-coded status and priority indicators.
+Handles status updates and deletion via parent callbacks.
 
 ## References
 
