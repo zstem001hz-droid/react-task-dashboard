@@ -43,3 +43,12 @@ export const calculateStats = (tasks: Task[]): TaskStats => {
     completed: tasks.filter(t => t.status === 'completed').length,
   };
 };
+
+// localStorage as JSON string
+export const saveTasksToStorage = (tasks: Task[]): void => {
+  try {
+    localStorage.setItem('react-task-dashboard', JSON.stringify(tasks));
+  } catch (error) {
+    console.error('Failed to save tasks to localStorage:', error);
+  }
+};
