@@ -105,4 +105,26 @@ function App() {
     });
   };
 
-  
+  // Apply filters then sort - derived from state, not stored separately
+  const processedTasks = sortTasksByDate(
+    filterTasks(tasks, filters),
+    sortDirection
+  );
+
+  return (
+    <Dashboard
+      theme={theme}
+      onThemeToggle={handleThemeToggle}
+      tasks={tasks}
+      processedTasks={processedTasks}
+      onAddTask={handleAddTask}
+      onStatusChange={handleStatusChange}
+      onDelete={handleDelete}
+      onFilterChange={handleFilterChange}
+      onSortToggle={handleSortToggle}
+      sortDirection={sortDirection}
+    />
+  );
+}
+
+export default App;
