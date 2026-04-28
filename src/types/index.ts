@@ -41,6 +41,7 @@ export interface TaskListProps {
   tasks: Task[];
   onStatusChange: (taskId: string, newStatus: TaskStatus) => void;
   onDelete: (taskId: string) => void;
+  theme: Theme;
 }
 
 // TaskItem component props
@@ -48,6 +49,7 @@ export interface TaskItemProps {
   task: Task;
   onStatusChange: (taskId: string, newStatus: TaskStatus) => void;
   onDelete: (taskId: string) => void;
+  theme: Theme;
 }
 
 // TaskForm component props
