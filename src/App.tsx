@@ -51,3 +51,25 @@ const sampleTasks: Task[] = [
     createdAt: new Date().toISOString(),
   },
 ];
+
+function App() {
+  // Initialize tasks from localStorage or fall back to sample data
+  const [tasks, setTasks] = useState<Task[]>(
+    () => loadTasksFromStorage() ?? sampleTasks
+  );
+
+  // Active filter selections from TaskFilter
+  const [filters, setFilters] = useState<FilterState>({});
+
+  // Sort direction for task list
+  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
+
+  // Theme state - defaults to system preference
+  const [theme, setTheme] = useState<Theme>('system');
+
+  // Persists tasks to localStorage whenever tasks array changes
+  useEffect(() => {
+    saveTasksToStorage(tasks);
+  }, [tasks]);
+
+  
