@@ -111,6 +111,9 @@ Handles status updates and deletion via parent callbacks.
 - [Vite Documentation](https://vitejs.dev/guide/)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 
+### Browser APIs
+- [Window: matchMedia() — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) — Window: matchMedia()
+- [prefers-color-scheme — MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) — prefers-color-scheme
 
 ## Reflections
 
