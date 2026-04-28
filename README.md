@@ -77,10 +77,13 @@ Handles status updates and deletion via parent callbacks.
 - [Sharing State Between Components](https://react.dev/learn/sharing-state-between-components) — lifting state and callbacks
 - [Reacting to Input with State](https://react.dev/learn/reacting-to-input-with-state) — controlled forms
 - [Derived State — React Blog](https://legacy.reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html) — You Probably Don't Need Derived State
+- [useMemo — React Docs](https://react.dev/reference/react/useMemo) — useMemo
 
 ### TypeScript
 - [TypeScript Handbook — Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)
 - [TypeScript Handbook — Union Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)
+- [TypeScript Handbook: Type Assertions](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions) — TypeScript Handbook: Type Assertions
+- [TypeScript Handbook: keyof Types](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html) — TypeScript Handbook: keyof Types
 - [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/)
 - [TypeScript Utility Types: Record](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type) — TypeScript Utility Types: Record
 - [TypeScript Handbook: Type Assertions](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions) — TypeScript Handbook: Type Assertions
@@ -90,6 +93,7 @@ Handles status updates and deletion via parent callbacks.
 - [String.prototype.toLowerCase() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase) — String.prototype.toLowerCase()
 - [Array.prototype.sort() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) — Array.prototype.sort()
 - [Date.getTime() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) — Date.prototype.getTime()
+- [Date.prototype.toISOString() — MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString) — Date.prototype.toISOString()
 
 ### localStorage
 - [Window: localStorage property — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) — Window: localStorage property

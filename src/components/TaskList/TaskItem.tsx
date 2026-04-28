@@ -1,5 +1,5 @@
 import React from "react";
-import type { TaskItemProps, TaskStatus } from '../../types/index';
+import type { TaskItemProps, TaskStatus } from "../../types/index";
 
 // Maps status values to background colors for conditional styling
 const statusColors: Record<string, string> = {
