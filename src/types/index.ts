@@ -34,7 +34,14 @@ export interface TaskStats {
 export interface DashboardProps {
   theme: Theme;
   onThemeToggle: () => void;
-}
+  tasks: Task[];
+  processedTasks: Task[];
+  onAddTask: (task: Task) => void;
+  onStatusChange: (taskId: string, newStatus: TaskStatus) => void;
+  onDelete: (taskId: string) => void;
+  onFilterChange: (filters: FilterState) => void;
+  onSortToggle: () => void;
+  sortDirection: 'asc' | 'desc';
 
 // TaskList component props
 export interface TaskListProps {
