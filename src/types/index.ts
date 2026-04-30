@@ -42,6 +42,7 @@ export interface DashboardProps {
   onFilterChange: (filters: FilterState) => void;
   onSortToggle: () => void;
   sortDirection: 'asc' | 'desc';
+}
 
 // TaskList component props
 export interface TaskListProps {

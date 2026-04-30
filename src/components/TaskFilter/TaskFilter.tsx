@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import type {
   TaskFilterProps,
-  TaskStatus,
   FilterState,
 } from "../../types/index";
 
